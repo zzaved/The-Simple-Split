@@ -5,21 +5,24 @@ const {themes: prismThemes} = require('prism-react-renderer');
 const config = {
   title: 'The Simple Split',
   tagline: 'Divida inteligente de despesas e gestão de micro-recebíveis',
-  favicon: 'img/favicon.ico',
 
   // 🌐 URL base do site (GitHub Pages)
   url: 'https://zzaved.github.io',
   baseUrl: '/The-Simple-Split/',
 
-  // 🧭 Organização e projeto (precisam refletir exatamente o nome do repo)
-  organizationName: 'Zzaved',
+  // 🧭 Organização e projeto (devem refletir exatamente o nome do repositório)
+  organizationName: 'zzaved',
   projectName: 'The-Simple-Split',
 
-  // ⚙️ Comportamento em links quebrados
+  // ⚙️ Tratamento de links e Markdown
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
-  // 🧩 Habilita suporte ao Mermaid
+  // 🧩 Suporte a Mermaid
   themes: ['@docusaurus/theme-mermaid'],
 
   // 🌍 Idiomas
@@ -38,7 +41,7 @@ const config = {
           sidebarPath: './sidebars.js',
           routeBasePath: '/', // Docs na raiz do site
           editUrl:
-            'https://github.com/Zzaved/The-Simple-Split/tree/main/docs/',
+            'https://github.com/zzaved/The-Simple-Split/tree/main/docs/',
         },
         blog: false, // Blog desativado
         theme: {
@@ -57,7 +60,7 @@ const config = {
         title: 'The Simple Split',
         logo: {
           alt: 'The Simple Split Logo',
-          src: 'img/TSS.png', // ✅ sem ../static
+          src: 'img/TSS.png',
         },
         items: [
           {
@@ -67,7 +70,7 @@ const config = {
             label: 'Documentação',
           },
           {
-            href: 'https://github.com/Zzaved/The-Simple-Split',
+            href: 'https://github.com/zzaved/The-Simple-Split',
             label: 'GitHub',
             position: 'right',
           },
