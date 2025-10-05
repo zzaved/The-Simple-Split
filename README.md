@@ -57,7 +57,7 @@ O aplicativo fornece informações contextuais e úteis para os usuários:
 ### 1. Como rodar e Testar
 ```bash
 # Clone o repositório
-git clone https://github.com/ceciliagalvaoo/qi-test.git
+git clone https://github.com/zzaved/The-Simple-Split.git
 cd qi-test
 # Crie e ative o ambiente virtual Python
 python -m venv .venv
