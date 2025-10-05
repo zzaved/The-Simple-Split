@@ -22,7 +22,7 @@ const config = {
     },
   },
 
-  // 🧩 Suporte a Mermaid
+  // 🧩 Suporte a Mermaid (renderização de diagramas)
   themes: ['@docusaurus/theme-mermaid'],
 
   // 🌍 Idiomas
@@ -51,7 +51,7 @@ const config = {
     ],
   ],
 
-  // 🎨 Configuração do tema e layout
+  // 🎨 Configuração de tema e layout
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -94,6 +94,10 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      // ⚙️ Configuração global opcional para Mermaid
+      mermaid: {
+        theme: {light: 'neutral', dark: 'dark'},
       },
     }),
 };

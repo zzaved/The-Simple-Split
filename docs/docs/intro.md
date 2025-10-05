@@ -6,11 +6,7 @@ slug: /
 
 # The Simple Split — Gestão Inteligente de Dívidas Sociais
 
-<iframe width="700" height="340" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" title="The Simple Split - Pitch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Vídeo de apresentação do projeto The Simple Split para o Inovacamp QI Tech 2025.
-
-#### **Pitch PDF:** [Clique aqui para acessar o Pitch completo](https://drive.google.com/seu-link-aqui)
+#### **Pitch PDF:** [Clique aqui para acessar o Pitch completo](https://www.canva.com/design/DAG06yDbcyU/dDN6euyQkZExydy1mi5eUw/view?utm_content=DAG06yDbcyU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h353feec3ed)
 
 ---
 
@@ -45,9 +41,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="numeros" label="Os Números">
     <ul>
-      <li>R$ 61 bilhões em empréstimos informais não pagos no Brasil (estimativa)</li>
       <li>61% dos brasileiros já se arrependeram de emprestar dinheiro (Serasa)</li>
-      <li>Média de R$ 300-500 por pessoa em dívidas sociais não quitadas</li>
       <li>Zero ferramentas para negociar micro-recebíveis entre pessoas físicas</li>
     </ul>
   </TabItem>
