@@ -1,35 +1,25 @@
-// @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
-
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'The Simple Split',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  url: 'https://zzaved.github.io', // Atualize conforme sua organização
-  baseUrl: '/The_Simple_Split/',
+  url: 'https://zzaved.github.io',
+  baseUrl: '/The-Simple-Split/',
 
-  organizationName: 'Zzaved', // Atualize conforme sua organização
-  projectName: 'The_Simple_Split',
+  organizationName: 'Zzaved',
+  projectName: 'The-Simple-Split',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  themes: ['@docusaurus/theme-mermaid'], // ✅ habilita Mermaid
 
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           routeBasePath: '/',
         },
         blog: false,
@@ -40,15 +30,13 @@ const config = {
     ],
   ],
   
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  themeConfig: ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'The Simple Split',
         logo: {
           alt: 'The Simple Split',
-          src: '../static/img/TSS.png',
+          src: 'img/TSS.png', // ✅ corrigido (sem ../static)
         },
         items: [
           {
@@ -58,7 +46,7 @@ const config = {
             label: 'Documentação',
           },
           {
-            href: 'https://github.com/Zzaved/The_Simple_Split', // Atualize para o URL correto do seu repositório
+            href: 'https://github.com/Zzaved/The-Simple-Split',
             label: 'GitHub',
             position: 'right',
           },
@@ -69,16 +57,10 @@ const config = {
         links: [
           {
             title: 'Docs',
-            items: [
-              {
-                label: 'Documentação',
-                to: '/',
-              },
-            ],
+            items: [{ label: 'Documentação', to: '/' }],
           },
-          // Resto do footer continua igual
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Simple Split.`,
       },
       prism: {
         theme: prismThemes.github,
@@ -86,5 +68,3 @@ const config = {
       },
     }),
 };
-
-export default config;
